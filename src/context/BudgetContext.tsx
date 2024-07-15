@@ -26,4 +26,4 @@ export const BudgetProvider = ({children}: BudgetProviderProps) => {
                 {children}
             </BudgetContext.Provider>
     )
-}
+} 
