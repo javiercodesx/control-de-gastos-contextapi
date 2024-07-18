@@ -5,9 +5,9 @@ import './index.css'
 import { BudgetProvider } from './context/BudgetContext.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <BudgetProvider>
-    <React.StrictMode>
+  <React.StrictMode>
+    <BudgetProvider>
       <App />
-    </React.StrictMode>
-  </BudgetProvider>
+    </BudgetProvider>
+  </React.StrictMode>
 )
