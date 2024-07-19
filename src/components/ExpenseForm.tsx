@@ -51,7 +51,12 @@ export default function ExpenseForm() {
       return
     }
 
-    dispatch({type: "add-expense", payload: {expense}})
+    if(state.editingId) {
+      dispatch({type: "update-expense", payload: {expense: {id: state.editingId, ...expense}}})
+    } 
+    else {
+      dispatch({type: "add-expense", payload: {expense}})
+    }
 
     setExpense({
       amount: 0,
@@ -79,7 +84,7 @@ export default function ExpenseForm() {
           htmlFor="expenseName"
           className="text-xl"
         >
-           Nombre Gasto:
+          Nombre Gasto:
         </label>
         <input 
           type="text" 
