@@ -46,14 +46,16 @@ export default function ExpenseDetails({expense} : ExpenseDetailsProps) {
   )
 
   return (
-    <SwipeableList>
+    <SwipeableList
+      className="shadow-md rounded-lg"
+    >
       <SwipeableListItem
         maxSwipe={30}
         leadingActions={leadingActions()}
         trailingActions={trailingActions()}
       >
 
-        <div className="bg-white shadow-lg p-10 w-full border-b border-gray-200 flex gap-5 items-center">
+        <div className="bg-white p-10 w-full flex gap-5 items-center">
           <div>
             <img 
               src={`/icono_${categoryInfo.icon}.svg`} 
