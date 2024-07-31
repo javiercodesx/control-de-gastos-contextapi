@@ -7,7 +7,6 @@ export default function FilterByCategory() {
 
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     dispatch({type: "filter-by-category", payload: {id: e.target.value}})
-    console.log(e.target.value);    
   }
 
   return (
