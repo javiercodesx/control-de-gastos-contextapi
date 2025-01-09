@@ -12,10 +12,12 @@ export default function ExpenseModal() {
         <>
             <div className="fixed right-5 bottom-5 flex items-center justify-center">
                 <button
+                    className='grid grid-cols-2 items-center'
                     type="button"
                     onClick={() => dispatch({type: "show-modal"})}
                 >
-                <PlusCircleIcon className='size-20 text-blue-600 rounded-full' />
+                    <p className='font-bold'>Añadir gasto</p>
+                    <PlusCircleIcon className='size-20 text-blue-600 rounded-full'/>
                 </button>
             </div>
 

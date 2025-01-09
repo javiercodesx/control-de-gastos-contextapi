@@ -14,7 +14,8 @@ export default function ExpenseList() {
         <div className="mt-10 space-y-2">
             {isEmpty ? <p className="text-gray-600 text-2xl font-bold">No hay gastos</p> : (
                 <>
-                    <p className="text-gray-600 text-2xl font-bold my-5">Listado de gastos</p>
+                    <p className="text-gray-600 text-2xl font-bold mt-5">Listado de gastos</p>
+                    <p className="font-light pb-5">Arrastra el gasto hacia la derecha si quieres actualizarlo, o hacia la izquierda si lo deseas eliminar</p>
                      {filteredExpenses.map(expense => (
                         <ExpenseDetails
                             key={expense.id}

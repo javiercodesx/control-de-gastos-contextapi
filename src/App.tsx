@@ -9,7 +9,6 @@ import FilterByCategory from "./components/FilterByCategory";
 
 function App() {
 
-
   const { state } = useBudget()
 
   const isValidBudget = useMemo(() => state.budget > 0, [state.budget])
